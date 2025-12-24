@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>冬至奶茶互动页</title>
+    <meta charset="UTF-8">
+    <!-- 简单按钮样式（可选，更美观） -->
+    <style>
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            border-radius: 8px;
+            background: #f59e0b;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #d97706;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        ❄️❅❆ 冬至的第一杯奶茶 ❆❅❄️<br><br>
+        <div id="text">送你一份冬日的温暖 暖暖的很贴心</div><br><br>
+        <!-- 交互按钮 -->
+        <button onclick="showTips()">点击领奶茶</button>
+        <button onclick="changeText()">切换文案</button>
+    </center>
+
+    <!-- 交互逻辑 -->
+    <script>
+        // 点击弹窗提示
+        function showTips() {
+            alert("🧋 奶茶已送达！请查收冬日暖意～");
+        }
+        // 切换文案
+        function changeText() {
+            const textElem = document.getElementById("text");
+            textElem.innerText === "送你一份冬日的温暖 暖暖的很贴心" 
+                ? textElem.innerText = "喝了这杯奶茶，冬天不冷啦！" 
+                : textElem.innerText = "送你一份冬日的温暖 暖暖的很贴心";
+        }
+    </script>
+</body>
+</html>
